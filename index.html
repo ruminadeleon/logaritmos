@@ -1,0 +1,210 @@
+Algoritmo ejerciciouno
+	A<-0
+	B<-0
+	C<-0
+	
+	Mostrar  "valor de los numeros"
+	Leer A,B,C 
+	// Definiciion de repeticion de numero 
+	Mientras A = B O B=C O C=A Hacer
+		Escribir  "hay un numero repetido"
+		Leer A,B,C
+	FinMientras
+	// EL NUMERO MAYOR ES 
+	Si A  > B Y A > C Entonces
+		Escribir "el valor mayor es el primero:" ,A
+	SiNo
+		Si B> A Y B > C 
+			Escribir " el valor mayor es el primero:" ,B
+		SiNo
+			Si C > A Y C > B Entonces
+				Escribir " el valor  mayor es el tercero:",C
+			SiNo
+			FinSi
+		FinSi
+	FinSi
+	// el numero menor es:
+	Si  A < B Y A < C Entonces
+		Escribir " el valor es menor al primero:",A
+	SiNo
+		Si  B < A Y B < C Entonces
+			Escribir " el valor es menor al segundo :",B
+		SiNo
+			Si C < A Y C < B Entonces
+				Escribir " el vaor menor es el tercero:" , C
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+Algoritmo   Ejerciciodos
+	sum <-0
+	Escribir "Ingrese el valor n"
+	Leer n
+	Para i<-1 Hasta 4 Con Paso  1 Hacer
+		value <- (2*n-1)
+		cadena_compuesta<- concatenar("cadena","value")
+		sum <- sum +value
+		Escribir sum
+	Fin Para
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo  Ejerciciotres
+	CAT1 <- 0
+	CAT2 <- 0
+	
+	Escribir "Ingresa los catetos"
+	Leer CAT1,CAT2
+	
+	H <- (CAT1 ^ 2 + CAT2 ^ 2)^ 0.5
+	
+	Escribir "el resultado de la hipotenusa es :" ,H
+	
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+Algoritmo Ejerciciocuatro
+	Escribir "Ingresa un numero del 1 al 20"
+	Leer N
+	
+	Si n > 0 Y n < 21 Entonces
+		Si n <= 9 Entonces
+			Escribir "rojo "
+			
+		SiNo
+			Si n <=12 Entonces
+				Escribir "amarillo"
+			SiNo
+				Si n <= 15 Entonces
+					Escribir "verde"
+				SiNo
+					Si n <= 18 Entonces
+						Escribir "celeste"
+					SiNo
+						Escribir "azul"
+					FinSi
+				FinSi
+			FinSi
+		
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo Ejerciciocuatro
+	Escribir "Ingresa un numero del 1 al 20"
+	Leer N
+	
+	Si n > 0 Y n < 21 Entonces
+		Si n <= 9 Entonces
+			Escribir "rojo "
+			
+		SiNo
+			Si n <=12 Entonces
+				Escribir "amarillo"
+			SiNo
+				Si n <= 15 Entonces
+					Escribir "verde"
+				SiNo
+					Si n <= 18 Entonces
+						Escribir "celeste"
+					SiNo
+						Escribir "azul"
+					FinSi
+				FinSi
+			FinSi
+		
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+Algoritmo Ejerciciosiete
+	n1 <- 0
+	n2 <- 0
+	n3 <- 0
+	n4 <- 0
+	sum <- 0
+	Escribir " Ingrese  las notas "
+	Leer n1,n2,n3,n4
+	sum <- (n1 + n2 + n3 + n4)/4
+	Escribir " El promedio de las notas ingresadas es :",sum
+FinAlgoritmo
+
+
+
+
+
+
+
+
+Algoritmo Ejercicio8
+	//Definir variables
+	p1<-0
+	p2<-0
+	ef<-0
+	c<-0
+	promedio <- 0
+	promediof <- 0
+	Escribir "Ingrese las notas en el curso de Historia obtenido en la practica1, practica2, evaluacion final y los creditos"
+	Leer p1h,p2h,efh,ch
+	promedio1<-((p1h+p2h+efh)/3)
+	historia<-(promedio1*ch)
+	
+		Escribir "Ingrese las notas en el curso de matematica obtenido en la practica1, practica2, evaluacion final y los creditos"
+		Leer p1m,p2m,efm,cm
+		promedio2<-((p1m+p2m+efm)/3)
+		matematica<-(promedio2*cm)
+		
+		Escribir "Ingrese las notas en el curso de geografia obtenido en la practica1, practica2, evaluacion final y los creditos"
+		Leer p1g,p2g,efg,cg
+		promedio3<-((p1g+p2g+efg)/3)
+		geografia<-(promedio3*cg)
+		Escribir "Ingrese las notas en el curso de arte obtenido en la practica1, practica2, evaluacion final y los creditos"
+		Leer p1a,p2a,efa,ca
+promedio4<-((p1a+p2a+efa)/3)
+arte<-(promedio4*ca)
+sumanotas<-(historia+matematica+geografia+arte)
+promediot<-((historia+matematica+geografia+arte)/4)
+mostrar "La suma total de las notas es", sumanotas
+Mostrar "El promedio total y final es", promediot
+	
+FinAlgoritmo
+
